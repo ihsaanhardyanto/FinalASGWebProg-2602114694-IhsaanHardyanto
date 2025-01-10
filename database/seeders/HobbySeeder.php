@@ -2,16 +2,28 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Hobby;
 
 class HobbySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        //
+        $hobbies = [
+            'Reading',
+            'Gaming',
+            'Cooking',
+            'Photography',
+            'Traveling',
+            'Music',
+            'Sports',
+            'Writing',
+            'Drawing',
+            'Dancing'
+        ];
+
+        foreach ($hobbies as $hobby) {
+            Hobby::create(['name' => $hobby]);
+        }
     }
 }

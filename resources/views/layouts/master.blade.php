@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-  <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
+  <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
-  <title>Document</title>
+  <title>Connect Friend</title>
 </head>
+
 <body>
-  <div>
+  <div class="container-fluid">
     @include('layouts.header')
 
     @yield('content')
@@ -18,6 +20,7 @@
     @include('layouts.footer')
   </div>
 
-  <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
+
 </html>
